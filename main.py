@@ -1,4 +1,3 @@
-
 import uvicorn
 from fastapi import FastAPI, File, UploadFile, HTTPException
 from application import calculate_fairness_metrics  # process_uploaded_file, 
@@ -7,7 +6,7 @@ from application import calculate_fairness_metrics  # process_uploaded_file,
 app = FastAPI()
 
 
-@app.post('/upload')
+@app.post('/explain_fairness/file')
 async def upload_file(file: UploadFile = File(...)):
     if not file.filename:
         raise HTTPException(status_code=400, detail='No selected file')
