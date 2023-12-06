@@ -1,0 +1,53 @@
+openapi: 3.0.0
+info:
+  title: Fairness Service
+  version: 1.0.0
+  description: API for the Fairness Service
+
+paths:
+  /explain_fairness/file:
+    post:
+      summary: Upload and process a CSV file to explain fairness
+      operationId: uploadFile
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                file:
+                  type: string
+                  format: binary
+      responses:
+        "200":
+          description: Successful file upload and processing
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                  fairness_summary:
+                    type: object # You may need to adjust this based on your actual response structure
+
+        "400":
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  detail:
+                    type: string
+
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  detail:
+                    type: string
