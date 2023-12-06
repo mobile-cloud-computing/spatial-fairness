@@ -1,3 +1,4 @@
+aif360==0.5.0
 absl-py==1.4.0
 astunparse==1.6.3
 black==23.3.0
