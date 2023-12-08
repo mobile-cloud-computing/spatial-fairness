@@ -10,10 +10,10 @@
 - sudo docker build -t fairness .
 - sudo docker run -p 8083:8083 fairness
 
-# Debugging
+## Debugging
 sudo docker ps
 
-# Clean rebuild docker image
+## Clean rebuild docker image
 sudo docker rmi -f "docker_image_id" 
 sudo docker system prune
 
