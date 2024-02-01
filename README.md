@@ -5,7 +5,7 @@
 - git clone https://github.com/Mrasinthe/Fairness.git
 - cd Fairness
 
-# Add files
+## Add files
  - Add files from the link to the 'data' folder
    https://tartuulikool-my.sharepoint.com/:f:/g/personal/marasing_ut_ee/EkWFwdVoOX1PqYkxcAewgNoBGtxDn275IC9-Dt7uJ6qZ6g?e=Kc83V5
 
