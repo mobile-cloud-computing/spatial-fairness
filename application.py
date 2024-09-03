@@ -453,9 +453,15 @@ def calculate_fairness_metrics(file_path):  #grouping_variable
 
         overall_fairness_score_Age =  fairness_for_age.get_predictions_fairness_score()
 
+        consistency_des = "Measures how similar the labels are for similar instances, 0 is the desirable value"
+        class_imbalance_des = "Compares ratio of positives among the classess, 0 is the desirable value"
+        disparate_impact_input_des = "Disparate impact is equivalent to Statistical parity difference. It measures differences in selection rates, O is desirable value"
+        disparate_impact_prediction_des = "Predict the differences in selection rates"
+        equal_opportunity_des = "Computes the equal opportunity difference, which measures whether the model provides equal opportunities for positive outcomes across different groups"
+        equalized_odds_des = "Calculates the average odds difference, which assesses whether the model exhibits equalized odds across different groups"
+        overall_fairness_score_des = "The overall fairness score aggregates various fairness metrics. The score is as bad as the worst performing metric for your model."
 
 
-        # Format the results as a dictionary
         results = {
             # 'grouping_variable': grouping_variable,
             'consistency_Gender': consistency_Gender,
@@ -471,7 +477,14 @@ def calculate_fairness_metrics(file_path):  #grouping_variable
             'disparate_impact_prediction_Age': disparate_impact_prediction_Age,
             'equal_opportunity_Age': equal_opportunity_Age,
             'equalized_odds_Age': equalized_odds_Age,
-            'overall_fairness_score_Age': overall_fairness_score_Age
+            'overall_fairness_score_Age': overall_fairness_score_Age,
+            'consistency_des': consistency_des,
+            'class_imbalance_des': class_imbalance_des,
+            'disparate_impact_input_des' : disparate_impact_input_des,
+            'disparate_impact_prediction_des': disparate_impact_prediction_des,
+            'equal_opportunity_des' : equal_opportunity_des,
+            'equalized_odds_des': equalized_odds_des,
+            'overall_fairness_score_des' : overall_fairness_score_des
         }
 
 
