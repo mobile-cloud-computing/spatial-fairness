@@ -1,6 +1,6 @@
 # Fairness Service
 
-## Installation Instructions (python 3.8.10)
+## Installation Instructions (python 3.9.12)
 
 - git clone https://github.com/Mrasinthe/Fairness.git
 - cd Fairness
