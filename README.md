@@ -12,7 +12,7 @@ To assess whether a model is predicting the desirable outcome equally well for a
 Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/Mrasinthe/Fairness.git
+git clone https://github.com/mobile-cloud-computing/spatial-fairness.git
 ```
 
 Create and activate environment Variable:
